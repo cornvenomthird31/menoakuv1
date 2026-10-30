@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#244b39"><title>Kampung Ceria — A Cozy Village Life</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar"><div><div class="eyebrow">A LITTLE PLACE TO CALL HOME</div><h1>Kampung Ceria</h1></div><div class="daybox"><span id="weather">☀️ Sunny</span><strong id="dayLabel">Day 1 · Spring</strong></div></header>
+    <section class="hud"><div class="stat"><span>⚡ ENERGY</span><div class="meter"><i id="energyBar"></i></div><b id="energyText">100/100</b></div><div class="stat"><span>🪙 COINS</span><b id="coins">50</b></div><div class="stat"><span>🌱 VILLAGE SPIRIT</span><div class="meter spirit"><i id="spiritBar"></i></div><b id="spiritText">0%</b></div><button id="helpBtn" class="small-btn">HOW TO PLAY</button></section>
+    <section class="layout"><div class="world-wrap"><div class="world-heading"><span>📍 KAMPUNG CERIA</span><span id="location">Your little homestead</span></div><canvas id="game" width="960" height="600" aria-label="Kampung Ceria game world"></canvas><div class="mobile-controls"><button data-move="up">▲</button><div><button data-move="left">◀</button><button data-move="down">▼</button><button data-move="right">▶</button></div></div><div class="world-tip">WASD / Arrow keys to move · Walk near an object and press SPACE to interact</div></div>
+    <aside class="sidepanel"><nav class="tabs"><button class="tab active" data-tab="tasks">Tasks</button><button class="tab" data-tab="bag">Bag</button><button class="tab" data-tab="map">Map</button></nav><div id="panel"></div><div class="action-row"><button id="interactBtn" class="primary">INTERACT · SPACE</button><button id="sleepBtn" class="secondary">SLEEP</button></div></aside></section>
+    <footer><span>Made with ♥ in the kampung</span><span>Progress saves automatically on this device</span></footer>
+  </main>
+  <dialog id="helpDialog"><button class="close" id="closeHelp">✕</button><h2>Welcome to Kampung Ceria!</h2><p>Your new life begins in a quiet Malaysian village. Explore, restore and take things at your own pace.</p><ul><li><b>Move:</b> WASD or arrow keys. On phones, use the direction buttons.</li><li><b>Interact:</b> Stand beside a glowing object and press SPACE or the Interact button.</li><li><b>Clear weeds:</b> Use energy to tidy your garden and earn village spirit.</li><li><b>Farm:</b> Prepare soil, plant seeds, water crops and harvest when ready.</li><li><b>Restore:</b> Visit the community hall, school and bridge to contribute materials and coins.</li><li><b>Sleep:</b> End the day, restore energy and let crops grow.</li></ul><p class="note">This is your first playable prototype. Your progress is saved in your browser.</p></dialog>
+  <div id="toast" role="status"></div>
+  <script src="game.js"></script>
+</body></html>
